@@ -1,0 +1,12 @@
+<h1>Restaurants</h1>
+
+<ul>
+<% @restaurants.each do |restaurant| %>
+
+<li> <%= link_to task.title, task_path(restaurant) %> - <%= restaurant.completed %> <%= link_to "DELETE", task_path(restaurant), method: :delete %></li>
+
+<% end %>
+
+</ul>
+
+<%= link_to "ADD Restaurants", tasks_new_path %>

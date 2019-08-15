@@ -17,10 +17,6 @@ class ReviewsController < ApplicationController
     end
   end
 
-  def find_restaurant
-
-  end
-
   private
 
   def review_params
